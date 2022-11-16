@@ -428,11 +428,24 @@ p {
 
 
 .clue-image {
-  border-radius: 2rem;
+  border-radius: 1rem;
   width: 120px;
   height: auto;
   gap: 1rem;
-  padding: 1rem;
+  margin: 1rem;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: .7;
+  transition: opacity .3s ease-in-out;
+}
+
+.clue-image:hover {
+  opacity: 1;
+}
+
+.active-clue {
+  opacity: 1;
+  box-shadow: 0 5px 5px var(--black-alpha-color);
 }
 
 .clue-names {
@@ -451,6 +464,17 @@ p {
   margin: 1rem;
 }
 
+.main-clue-image {
+  border-radius: 2rem;
+  min-width: 100px;
+  max-width: 300px;
+  height: auto;
+  gap: 1rem;
+  padding: 1rem;
+  object-fit: cover;
+
+}
+
 .footer {
   margin-bottom: var(--header-height);
   padding: .5rem;
@@ -465,7 +489,7 @@ p {
   border: medium dashed var(--first-color);
 }
 
-.guilty>details {
+.guilty details {
   font-family: var(--first-font);
   font-weight: bold;
 }

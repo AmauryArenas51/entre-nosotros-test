@@ -19,48 +19,41 @@
   });
 })(document);
 
-/* ********* Drag&Drop ********* */
+/* ********* Details Clues ********* */
 
-const CLUE = 3;
+const mainImage = document.querySelector(".main-clue-image");
+const thumbnail = document.querySelectorAll(".clue-image");
 
-let draggableElement = document.querySelector(".draggable-elements");
-let droppableElement = document.querySelector(".droppable-elements");
+const mainImage2 = document.querySelector(".main-clue-image-2");
+const thumbnail2 = document.querySelectorAll(".clue-image-2");
 
-let clues = document.querySelectorAll(".draggable-image");
-clues = [...clues];
-clues.forEach((clues) => {
-  clues.addEventListener("dragstart", (event) => {
-    event.dataTransfer.setData("text", event.target.id);
+/* const mainImage1 = document.querySelector(".main-clue-image-2");
+const clue1 = document.querySelectorAll(".clue1"); */
+/* const clue1 = document.querySelector("#"); */
+
+thumbnail.forEach((thumb) => {
+  thumb.addEventListener("click", function () {
+    const active = document.querySelector(".active-clue-1");
+    active.classList.remove("active-clue-1");
+    this.classList.add("active-clue-1");
+    mainImage.src = this.src;
   });
 });
 
-let clueNames = document.querySelectorAll(".clue-names");
-let wrongMsg = document.querySelector(".wrong");
-let points = 0;
-clueNames = [...clueNames];
-clueNames.forEach((clueNames) => {
-  clueNames.addEventListener("dragover", (event) => {
-    event.preventDefault();
-  });
-  clueNames.addEventListener("drop", (event) => {
-    const draggableElementData = event.dataTransfer.getData("text");
-    let clueElement = document.querySelector(`#${draggableElementData}`);
-
-    if (event.target.innerText == draggableElementData) {
-      console.log("si");
-      event.target.innerHTML = "";
-      points++;
-      event.target.appendChild(clueElement);
-      wrongMsg.innerText = "";
-
-      if (points == CLUE) {
-        draggableElement.innerHTML = `<p class="win">Ganaste</p>`;
-      }
-    } else {
-      console.log("no");
-      wrongMsg.innerText = "Ups";
-    }
+thumbnail2.forEach((thumb) => {
+  thumb.addEventListener("click", function () {
+    const active = document.querySelector(".active-clue-2");
+    active.classList.remove("active-clue-2");
+    this.classList.add("active-clue-2");
+    mainImage2.src = this.src;
   });
 });
 
-/* ********* Drag&Drop Touch ********* */
+/* clue1.forEach((clue) => {
+  clue.addEventListener("click", function () {
+    const active = document.querySelector(".active-clue");
+    active.classList.remove("active-clue");
+    this.classList.add("active-clue");
+    mainImage1.src = this.src;
+  });
+}); */
