@@ -476,6 +476,11 @@ p {
   width: 100%;
   height: var(--header-height);
   background-color: var(--second-color);
+  font-size: .5rem;
+}
+
+.header a {
+  font-size: 1rem;
 }
 
 .header>.container {
@@ -502,9 +507,8 @@ p {
 .logo a {
   color: var(--third-color);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
-
 }
 
 .logo svg {
@@ -661,5 +665,14 @@ p {
     top: 0;
     padding: 1.5rem;
     height: calc(var(--header-height)-0.5rem);
+  }
+
+  .header a {
+    font-size: 1.2rem;
+  }
+
+  .logo a {
+
+    font-size: 2rem;
   }
 }
