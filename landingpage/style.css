@@ -324,6 +324,10 @@ p {
   display: none;
 }
 
+.text-overflow-hidden {
+  overflow: hidden;
+}
+
 .scrollable {
   max-width: 400px;
   max-height: 400px;
