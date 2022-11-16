@@ -569,34 +569,45 @@
     <article class="interactive container text-lg-center text-center">
       <h2 class="section-title-2">Pistas</h2>
       <h3>Encuentra el orden correcto de las pistas y quien es el culpable</h3>
-      <div class="draggable-elements">
-        <div class="clue">
-          <img id="Pista1" draggable="true" class="draggable-image" src="img/Amanda.png" alt="Amanda">
-        </div>
-        <div class="clue">
-          <img id="Pista2" draggable="true" class="draggable-image" src="img/Amanda.png" alt="Amanda">
-        </div>
-        <div class="clue">
-          <img id="Pista3" draggable="true" class="draggable-image" src="img/Amanda.png" alt="Amanda">
-        </div>
 
+      <div class="clue-names">
+        <div class="details-elements">
+          <div class="default-clue-image">
+            <img class="clue-image main-clue-image" src="img/Amanda.png" alt="Default image">
+          </div>
+
+          <details>
+            <summary>Pista 1</summary>
+            <img class="clue-image" src="img/Amanda.png" alt="Amanda">
+            <img class="clue-image" src="img/Vecino.png" alt="Vecino">
+            <img class="clue-image" src="img/Basuras.png" alt="Señor de la basura">
+            <img class="clue-image" src="img/Charles.png" alt="Charles Siebert">
+            <img class="clue-image" src="img/Vecino.png" alt="Vecino">
+            <img class="clue-image" src="img/Vecino.png" alt="Vecino">
+            <img class="clue-image" src="img/Vecino.png" alt="Vecino">
+            <img class="clue-image" src="img/Vecino.png" alt="Vecino">
+          </details>
+        </div>
       </div>
-      <h3>Arrastra y suelta</h3>
-      <div class="droppable-elements">
-        <div class="clue-names">
-          <p>Pista1</p>
-        </div>
-        <div class="clue-names">
-          <p>Pista2</p>
-        </div>
-        <div class="clue-names">
-          <p>Pista3</p>
-        </div>
-        <div class="clue-names guilty">
-          <p>Culpable</p>
-        </div>
+
+      <div class="clue-names">
+        <details>
+          <summary>Pista 2</summary>
+        </details>
       </div>
-      <p class="wrong"></p>
+      <div class="clue-names">
+        <details>
+          <summary>Pista 1</summary>
+        </details>
+      </div>
+      <div class="clue-names guilty">
+        <details>
+          <summary>Culpable</summary>
+        </details>
+      </div>
+      </div>
+
+
     </article>
   </section>
 

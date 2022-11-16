@@ -426,20 +426,13 @@ p {
 
 /* ********* Site Styles ********* */
 
-.draggable-elements,
-.droppable-elements {
-  border: thin solid var(--black-color);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1rem;
-  padding: 2rem;
-  min-height: 230px;
-}
 
-.draggable-image {
+.clue-image {
+  border-radius: 2rem;
   width: 120px;
-  border-radius: 1rem;
+  height: auto;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .clue-names {
@@ -447,9 +440,15 @@ p {
   border-radius: 1rem;
   min-width: 120px;
   padding: 0 1rem;
-  height: 160px;
+  min-height: 10rem;
   display: grid;
   place-content: center;
+  margin: 2rem;
+}
+
+.clue-names summary {
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .footer {
@@ -466,7 +465,7 @@ p {
   border: medium dashed var(--first-color);
 }
 
-.guilty>p {
+.guilty>details {
   font-family: var(--first-font);
   font-weight: bold;
 }

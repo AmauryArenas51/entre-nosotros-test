@@ -62,3 +62,5 @@ clueNames.forEach((clueNames) => {
     }
   });
 });
+
+/* ********* Drag&Drop Touch ********* */
