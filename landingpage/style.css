@@ -443,7 +443,8 @@ p {
   opacity: 1;
 }
 
-.active-clue {
+.active-clue-1,
+.active-clue-2 {
   opacity: 1;
   box-shadow: 0 5px 5px var(--black-alpha-color);
 }
@@ -466,7 +467,7 @@ p {
 
 .main-clue-image {
   border-radius: 2rem;
-  min-width: 100px;
+  min-width: 50px;
   max-width: 300px;
   height: auto;
   gap: 1rem;
