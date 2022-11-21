@@ -566,7 +566,7 @@
 
 
   <section id="pistas">
-    <article class="interactive container text-lg-center text-center">
+    <article class="interactive container text-lg-center text-center customize-radio">
       <h2 class="section-title-2">Pistas</h2>
       <h3>Encuentra el orden correcto de las pistas y quien es el culpable</h3>
 
@@ -577,56 +577,87 @@
           </div>
           <details>
             <summary>Pista 1</summary>
-            <div id="resultado"></div>
-
             <form id="quiz" name="quiz">
-              <input type="radio" id="mc" name="p1" value="a"><img class="clue-image clue-image-1 active-clue-1"
-                src="img/Amanda.png" alt="Amanda">
-              <input type="radio" id="mc" name="p1" value="b"><img class="clue-image clue-image-1" src="img/Vecino.png"
-                alt="Vecino">
-              <input type="radio" id="mc" name="p1" value="c"><img class="clue-image clue-image-1" src="img/Basuras.png"
-                alt="Señor de la basura" id="right-clue">
-              <input type="radio" id="mc" name="p1" value="d"><img class="clue-image clue-image-1" src="img/Charles.png"
-                alt="Charles Siebert">
-              <input type="radio" id="mc" name="p1" value="e"><img class="clue-image clue-image-1"
-                src="img/CompañerosTrabajo.png" alt="Compañeros de trabajo de Lewis">
-              <input type="radio" id="mc" name="p1" value="f"><img class="clue-image clue-image-1"
-                src="img/Paramedica.png" alt="Linda Fox">
-              <input type="radio" id="mc" name="p1" value="g"><img class="clue-image clue-image-1" src="img/Vecinos.png"
-                alt="Vecinos: Ferguson">
-              <input type="radio" id="mc" name="p1" value="h"><img class="clue-image clue-image-1" src="img/Abuela.png"
-                alt="Abuela Brenda Burns">
-              <input type="radio" id="mc" name="p1" value="i"><img class="clue-image clue-image-1" src="img/Doctora.png"
-                alt="Dra. Renne Fox">
-              <input type="radio" id="mc" name="p1" value="j"><img class="clue-image clue-image-1" src="img/Bombero.png"
-                alt="Charles Corcoran">
 
-              <input class="btn" id="button" type="button" value="Enviar" onclick="check()">
+              <input type="radio" id="amanda" name="p1" value="a">
+              <label for="amanda"><img class="clue-image clue-image-1 active-clue-1" src="img/Amanda.png" alt="Amanda">
+              </label>
 
-            </form>
+
+              <input type="radio" id="vecino" name="p1" value="b"><label for="vecino"><img
+                  class="clue-image clue-image-1" src="img/Vecino.png" alt="Vecino"></label>
+
+              <input type="radio" id="basuras" name="p1" value="c"><label for="basuras"><img
+                  class="clue-image clue-image-1" src="img/Basuras.png" alt="Señor de la basura"></label>
+
+              <input type="radio" id="charles" name="p1" value="d"><label for="charles"><img
+                  class="clue-image clue-image-1" src="img/Charles.png" alt="Charles Siebert"></label>
+
+              <input type="radio" id="companeros" name="p1" value="e"><label for="companeros"><img
+                  class="clue-image clue-image-1" src="img/CompañerosTrabajo.png"
+                  alt="Compañeros de trabajo de Lewis"></label>
+
+              <input type="radio" id="paramedico" name="p1" value="f"><label for="paramedico"><img
+                  class="clue-image clue-image-1" src="img/Paramedica.png" alt="Linda Fox"></label>
+
+              <input type="radio" id="vecinos" name="p1" value="g"><label for="vecinos"><img
+                  class="clue-image clue-image-1" src="img/Vecinos.png" alt="Vecinos: Ferguson"></label>
+
+              <input type="radio" id="abuela" name="p1" value="h"><label for="abuela"><img
+                  class="clue-image clue-image-1" src="img/Abuela.png" alt="Abuela Brenda Burns"></label>
+
+              <input type="radio" id="doctora" name="p1" value="i"><label for="doctora"><img
+                  class="clue-image clue-image-1" src="img/Doctora.png" alt="Dra. Renne Fox"></label>
+
+              <input type="radio" id="bombero" name="p1" value="j"><label for="bombero"><img
+                  class="clue-image clue-image-1" src="img/Bombero.png" alt="Charles Corcoran"></label>
+
           </details>
         </div>
       </div>
 
-      <div class="clue-names">
+      <div class=" clue-names">
         <div class="details-elements">
           <div class="default-clue-image">
-            <img class="main-clue-image main-clue-image-2" id="clue-2" src="icons/Detective.svg" alt="Default image">
+            <img class="main-clue-image main-clue-image-2" src="icons/Detective.svg" alt="Default image">
           </div>
 
           <details>
             <summary>Pista 2</summary>
-            <img name="p2" value="a" class="clue-image clue-image-2 active-clue-2" src="img/Amanda.png" alt="Amanda">
-            <img name="p2" value="b" class="clue-image clue-image-2" src="img/Vecino.png" alt="Vecino">
-            <img name="p2" value="c" class="clue-image clue-image-2" src="img/Basuras.png" alt="Señor de la basura">
-            <img name="p2" value="d" class="clue-image clue-image-2" src="img/Charles.png" alt="Charles Siebert">
-            <img name="p2" value="e" class="clue-image clue-image-2" src="img/CompañerosTrabajo.png"
-              alt="Compañeros de trabajo de Lewis">
-            <img name="p2" value="f" class="clue-image clue-image-2" src="img/Paramedica.png" alt="Linda Fox">
-            <img name="p2" value="g" class="clue-image clue-image-2" src="img/Vecinos.png" alt="Vecinos: Ferguson">
-            <img name="p2" value="h" class="clue-image clue-image-2" src="img/Abuela.png" alt="Abuela Brenda Burns">
-            <img name="p2" value="i" class="clue-image clue-image-2" src="img/Doctora.png" alt="Dra. Renne Fox">
-            <img name="p2" value="j" class="clue-image clue-image-2" src="img/Bombero.png" alt="Charles Corcoran">
+
+            <input type="radio" id="amanda2" name="p2" value="a">
+            <label for="amanda2"><img class="clue-image clue-image-2 active-clue-2" src="img/Amanda.png" alt="Amanda">
+            </label>
+
+
+            <input type="radio" id="vecino2" name="p2" value="b"><label for="vecino2"><img
+                class="clue-image clue-image-2" src="img/Vecino.png" alt="Vecino"></label>
+
+            <input type="radio" id="basuras2" name="p2" value="c"><label for="basuras2"><img
+                class="clue-image clue-image-2" src="img/Basuras.png" alt="Señor de la basura"></label>
+
+            <input type="radio" id="charles2" name="p2" value="d"><label for="charles2"><img
+                class="clue-image clue-image-2" src="img/Charles.png" alt="Charles Siebert"></label>
+
+            <input type="radio" id="companeros2" name="p2" value="e"><label for="companeros2"><img
+                class="clue-image clue-image-2" src="img/CompañerosTrabajo.png"
+                alt="Compañeros de trabajo de Lewis"></label>
+
+            <input type="radio" id="paramedico2" name="p2" value="f"><label for="paramedico2"><img
+                class="clue-image clue-image-2" src="img/Paramedica.png" alt="Linda Fox"></label>
+
+            <input type="radio" id="vecinos2" name="p2" value="g"><label for="vecinos2"><img
+                class="clue-image clue-image-2" src="img/Vecinos.png" alt="Vecinos: Ferguson"></label>
+
+            <input type="radio" id="abuela2" name="p2" value="h"><label for="abuela2"><img
+                class="clue-image clue-image-2" src="img/Abuela.png" alt="Abuela Brenda Burns"></label>
+
+            <input type="radio" id="doctora2" name="p2" value="i"><label for="doctora2"><img
+                class="clue-image clue-image-2" src="img/Doctora.png" alt="Dra. Renne Fox"></label>
+
+            <input type="radio" id="bombero2" name="p2" value="j"><label for="bombero2"><img
+                class="clue-image clue-image-2" src="img/Bombero.png" alt="Charles Corcoran"></label>
+
           </details>
         </div>
       </div>
@@ -634,21 +665,45 @@
       <div class="clue-names">
         <div class="details-elements">
           <div class="default-clue-image">
-            <img class="main-clue-image .main-clue-image-1" id="clue-3" src="icons/Detective.svg" alt="Default image">
+            <img class="main-clue-image main-clue-image-3" src="icons/Detective.svg" alt="Default image">
           </div>
 
           <details>
             <summary>Pista 3</summary>
-            <img id="0" class="clue-image clue1 active-clue" src="img/Amanda.png" alt="Amanda">
-            <img id="1" class="clue-image clue1" src="img/Vecino.png" alt="Vecino">
-            <img id="2" class="clue-image clue1" src="img/Basuras.png" alt="Señor de la basura">
-            <img id="3" class="clue-image clue1" src="img/Charles.png" alt="Charles Siebert">
-            <img id="4" class="clue-image clue1" src="img/CompañerosTrabajo.png" alt="Compañeros de trabajo de Lewis">
-            <img id="5" class="clue-image clue1" src="img/Paramedica.png" alt="Linda Fox">
-            <img id="6" class="clue-image clue1" src="img/Vecinos.png" alt="Vecinos: Ferguson">
-            <img id="7" class="clue-image clue1" src="img/Abuela.png" alt="Abuela Brenda Burns">
-            <img id="8" class="clue-image clue1" src="img/Doctora.png" alt="Dra. Renne Fox">
-            <img id="9" class="clue-image clue1" src="img/Bombero.png" alt="Charles Corcoran">
+
+            <input type="radio" id="amanda3" name="p3" value="a">
+            <label for="amanda3"><img class="clue-image clue-image-3 active-clue-3" src="img/Amanda.png" alt="Amanda">
+            </label>
+
+
+            <input type="radio" id="vecino3" name="p3" value="b"><label for="vecino3"><img
+                class="clue-image clue-image-3" src="img/Vecino.png" alt="Vecino"></label>
+
+            <input type="radio" id="basuras3" name="p3" value="c"><label for="basuras3"><img
+                class="clue-image clue-image-3" src="img/Basuras.png" alt="Señor de la basura"></label>
+
+            <input type="radio" id="charles3" name="p3" value="d"><label for="charles3"><img
+                class="clue-image clue-image-3" src="img/Charles.png" alt="Charles Siebert"></label>
+
+            <input type="radio" id="companeros3" name="p3" value="e"><label for="companeros3"><img
+                class="clue-image clue-image-3" src="img/CompañerosTrabajo.png"
+                alt="Compañeros de trabajo de Lewis"></label>
+
+            <input type="radio" id="paramedico3" name="p3" value="f"><label for="paramedico3"><img
+                class="clue-image clue-image-3" src="img/Paramedica.png" alt="Linda Fox"></label>
+
+            <input type="radio" id="vecinos3" name="p3" value="g"><label for="vecinos3"><img
+                class="clue-image clue-image-3" src="img/Vecinos.png" alt="Vecinos: Ferguson"></label>
+
+            <input type="radio" id="abuela3" name="p3" value="h"><label for="abuela3"><img
+                class="clue-image clue-image-3" src="img/Abuela.png" alt="Abuela Brenda Burns"></label>
+
+            <input type="radio" id="doctora3" name="p3" value="i"><label for="doctora3"><img
+                class="clue-image clue-image-3" src="img/Doctora.png" alt="Dra. Renne Fox"></label>
+
+            <input type="radio" id="bombero3" name="p3" value="j"><label for="bombero3"><img
+                class="clue-image clue-image-3" src="img/Bombero.png" alt="Charles Corcoran"></label>
+
           </details>
         </div>
       </div>
@@ -656,30 +711,57 @@
       <div class="clue-names guilty">
         <div class="details-elements">
           <div class="default-clue-image">
-            <img class="main-clue-image" id="clue-3" src="img/Amanda.png" alt="Default image">
+            <img class="main-clue-image main-clue-image-4" src="icons/Detective.svg" alt="Default image">
           </div>
 
           <details>
             <summary>Culpable</summary>
-            <img id="0" class="clue-image active-clue" src="img/Amanda.png" id="culpable" alt="Amanda">
-            <img id="1" class="clue-image" src="img/Vecino.png" alt="Vecino">
-            <img id="2" class="clue-image" src="img/Basuras.png" alt="Señor de la basura">
-            <img id="3" class="clue-image" src="img/Charles.png" alt="Charles Siebert">
-            <img id="4" class="clue-image" src="img/CompañerosTrabajo.png" alt="Compañeros de trabajo de Lewis">
-            <img id="5" class="clue-image" src="img/Paramedica.png" alt="Linda Fox">
-            <img id="6" class="clue-image" src="img/Vecinos.png" alt="Vecinos: Ferguson">
-            <img id="7" class="clue-image" src="img/Abuela.png" alt="Abuela Brenda Burns">
-            <img id="8" class="clue-image" src="img/Doctora.png" alt="Dra. Renne Fox">
-            <img id="9" class="clue-image" src="img/Bombero.png" alt="Charles Corcoran">
+
+            <input type="radio" id="amanda4" name="p4" value="a">
+            <label for="amanda4"><img class="clue-image clue-image-4 active-clue-4" src="img/Amanda.png" alt="Amanda">
+            </label>
+
+
+            <input type="radio" id="vecino4" name="p4" value="b"><label for="vecino4"><img
+                class="clue-image clue-image-4" src="img/Vecino.png" alt="Vecino"></label>
+
+            <input type="radio" id="basuras4" name="p4" value="c"><label for="basuras4"><img
+                class="clue-image clue-image-4" src="img/Basuras.png" alt="Señor de la basura"></label>
+
+            <input type="radio" id="charles4" name="p4" value="d"><label for="charles4"><img
+                class="clue-image clue-image-4" src="img/Charles.png" alt="Charles Siebert"></label>
+
+            <input type="radio" id="companeros4" name="p4" value="e"><label for="companeros4"><img
+                class="clue-image clue-image-4" src="img/CompañerosTrabajo.png"
+                alt="Compañeros de trabajo de Lewis"></label>
+
+            <input type="radio" id="paramedico4" name="p4" value="f"><label for="paramedico4"><img
+                class="clue-image clue-image-4" src="img/Paramedica.png" alt="Linda Fox"></label>
+
+            <input type="radio" id="vecinos4" name="p4" value="g"><label for="vecinos4"><img
+                class="clue-image clue-image-4" src="img/Vecinos.png" alt="Vecinos: Ferguson"></label>
+
+            <input type="radio" id="abuela4" name="p4" value="h"><label for="abuela4"><img
+                class="clue-image clue-image-4" src="img/Abuela.png" alt="Abuela Brenda Burns"></label>
+
+            <input type="radio" id="doctora4" name="p4" value="i"><label for="doctora4"><img
+                class="clue-image clue-image-4" src="img/Doctora.png" alt="Dra. Renne Fox"></label>
+
+            <input type="radio" id="bombero4" name="p4" value="j"><label for="bombero4"><img
+                class="clue-image clue-image-4" src="img/Bombero.png" alt="Charles Corcoran"></label>
+
           </details>
         </div>
       </div>
+      <input class=" btn" id="button" type="button" value="Revisar" onclick="check()">
+      </form>
+
+      <button class="btn" onclick="myFunction()">Reiniciar</button>
 
       <div id="after-submit">
         <p id="number-correct"></p>
       </div>
 
-      <button class="btn" onclick="myFunction()">Reiniciar</button>
 
     </article>
 

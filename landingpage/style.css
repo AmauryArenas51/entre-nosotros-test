@@ -311,6 +311,11 @@ p {
   /*   font-size: 1.5rem; */
 }
 
+
+.amanda-image {
+  background-image: url("img/Amanda.png");
+}
+
 .margin-bottom {
   margin-bottom: 2rem;
 }
@@ -431,6 +436,10 @@ p {
   visibility: hidden;
 }
 
+.customize-radio input[type="radio"] {
+  display: none;
+}
+
 .clue-image {
   border-radius: 1rem;
   width: 120px;
@@ -448,7 +457,9 @@ p {
 }
 
 .active-clue-1,
-.active-clue-2 {
+.active-clue-2,
+.active-clue-3,
+.active-clue-4 {
   opacity: 1;
   box-shadow: 0 5px 5px var(--black-alpha-color);
 }

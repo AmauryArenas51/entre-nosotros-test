@@ -21,11 +21,6 @@
 
 /* ********* Details Clues ********* */
 
-/* class Clues {
-  constructor() {
-    this.canPlay = false;
-  }
-}
 const mainImage1 = document.querySelector(".main-clue-image-1");
 const thumbnail1 = document.querySelectorAll(".clue-image-1");
 
@@ -37,16 +32,6 @@ const thumbnail3 = document.querySelectorAll(".clue-image-3");
 
 const mainImage4 = document.querySelector(".main-clue-image-4");
 const thumbnail4 = document.querySelectorAll(".clue-image-4");
-
-const activeClue1 = document.querySelector(".active-clue-1");
-
-const activeClue2 = document.querySelector(".active-clue-2");
-
-const activeClue3 = document.querySelector(".active-clue-3");
-
-const activeClue4 = document.querySelector(".active-clue-4");
-
-let revelation = document.querySelector(".resolution");
 
 document.addEventListener("DOMContentLoaded", () => {
   function selectClue() {
@@ -60,56 +45,67 @@ document.addEventListener("DOMContentLoaded", () => {
   clues.forEach((clue) => {
     clue.addEventListener("click", selectClue);
   });
-  new Clues();
-}); */
 
-/* function verificarRespuestas() {
-  let total = 1;
-  let puntos = 0;
-
-  let myForm = document.forms["quizForm"];
-  let respuestas = ["c", "c"];
-
-  for (let i = 0; i <= total; i++) {
-    if (myForm["p" + i].value === null || myForm["p" + i].value === "") {
-      alert("Por favor responde la pregunta " + i);
-      return false;
-    } else {
-      if (myForm["p" + i].value === respuestas[i - 1]) {
-        puntos++;
-      }
-    }
+  function selectClue2() {
+    const active2 = document.querySelector(".active-clue-2");
+    active2.classList.remove("active-clue-2");
+    this.classList.add("active-clue-2");
+    mainImage2.src = this.src;
   }
 
-  let resultado = document.getElementById("resultado");
-  resultado.innerHTML =
-    `<h3>Obtuviste <span>` +
-    puntos +
-    `</span> de <span>'</span>` +
-    total +
-    ` puntos</h3>`;
+  const clues2 = thumbnail2;
+  clues2.forEach((clue2) => {
+    clue2.addEventListener("click", selectClue2);
+  });
 
-  return false;
-}
+  function selectClue3() {
+    const active3 = document.querySelector(".active-clue-3");
+    active3.classList.remove("active-clue-3");
+    this.classList.add("active-clue-3");
+    mainImage3.src = this.src;
+  }
 
-function reset(); */
+  const clues3 = thumbnail3;
+  clues3.forEach((clue3) => {
+    clue3.addEventListener("click", selectClue3);
+  });
+
+  function selectClue4() {
+    const active4 = document.querySelector(".active-clue-4");
+    active4.classList.remove("active-clue-4");
+    this.classList.add("active-clue-4");
+    mainImage4.src = this.src;
+  }
+
+  const clues4 = thumbnail4;
+  clues4.forEach((clue4) => {
+    clue4.addEventListener("click", selectClue4);
+  });
+});
 
 function check() {
   let question1 = document.quiz.p1.value;
-  /*   let question2 = document.quiz.p2.value;
-  let question3 = document.quiz.p3.value; */
+  let question2 = document.quiz.p2.value;
+  let question3 = document.quiz.p3.value;
+  let question4 = document.quiz.p4.value;
 
   let correct = 0;
+  let allCorrect = 4;
 
   if (question1 == "a") {
     correct++;
   }
-  /*   if (question2 == "b") {
+  if (question2 == "b") {
     correct++;
   }
   if (question3 == "c") {
     correct++;
-  } */
+  }
+  if (question4 == "d") {
+    correct++;
+  }
+  if (correct == allCorrect) {
+  }
 
   document.getElementById("after-submit").style.visibility = "visible";
   document.getElementById("number-correct").innerHTML =
